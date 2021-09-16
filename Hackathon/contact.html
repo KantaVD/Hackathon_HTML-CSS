@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SAF-Food</title>
+    <link rel="stylesheet" type="text/css" href="ESVE.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="blaadjes" src="./blaadjes.png">
+        <h1 class="pagetitel">Contact</h1>
+        <p class="ondertitel">Voor al uw vragen</p>
+        <nav>
+            <ul>
+                <li><a href="./Index.html">Home</a></li>
+                <li><a href="./nijlpaard.html">Nijlpaard</a></li>
+                <li><a href="./zebra.html">Zebra</a></li>
+                <li><a href="./cheetah.html">Cheetah</a></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Wij staan voor u klaar</h2>
+        <img id="telehond" src="./Hond met telefoon.jpg" alt=" hond met telefoon">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium animi, quaerat repudiandae enim
+            impedit, neque numquam eos iure facere sint eius perspiciatis velit architecto consequuntur molestiae,
+            corrupti asperiores nobis maiores.</p>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label for="aanspreekvorm">Hoe wilt u aangesproken worden?</label><br>
+                <input type="radio" id="Dhr" name="aanspreekvorm">
+                <label for="nijlpaard">Dhr</label><br>
+
+                <input type="radio" id="Mvr" name="aanspreekvorm">
+                <label for="zebra">Mvr</label><br>
+
+                <input type="radio" id="Anders" name="aanspreekvorm">
+                <label for="cheetah">Anders namelijk:<br>
+                    <input type="text" id="namelijk" name="aanspreekvorm">
+                </label><br>
+
+            </p>
+
+            <p>
+                <label for="naam">Naam:</label><br>
+                <input type="text" id="naam" name="naam" value="Voor en Achternaam" required>
+            </p>
+
+            <p>
+                <label for="leeftijd">Uw leeftijd:</label><br>
+                <input type="number" id="leeftijd" name="leeftijd" max="80" min="12">
+            </p>
+
+            <p>
+                <label for="mail">Mailadres:</label><br>
+                <input type="email" id="mail" name="email" required>
+            </p>
+
+            <p>
+                <label for="tel">Telefoonnummer:</label><br>
+                <input type="tel" id="tel" name="tel">
+            </p>
+
+            <p>
+                <label for="diersoort">Welke dieren heeft u?</label><br>
+                <input type="checkbox" id="nijlpaard" name="diersoort">
+                <label for="nijlpaard">Nijlpaard</label><br>
+
+                <input type="checkbox" id="zebra" name="diersoort">
+                <label for="zebra">Zebra</label><br>
+
+                <input type="checkbox" id="cheetah" name="diersoort">
+                <label for="cheetah">Cheetah</label><br>
+            </p>
+
+            <p>
+                <label for="webshop">waar koopt u uw voeding altijd?</label><br>
+                <input type="url" id="webshop" name="webshop" value="https://">
+            </p>
+
+            <p>
+                <label for="vraag">Stel hier uw vraag:</label><br>
+                <textarea rows="5" cols="30" name="vraag" id="vraag"
+                    placeholder="Een opmerking op klacht mag natuurlijk ook."></textarea>
+            </p>
+
+            <p>
+                <label for="afbeeldingen">Voeg hier uw foto's toe:</label><br>
+                <input type="file" name="afbeeldingen" id="afbeeldingen" multiple>
+            </p>
+
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        <a href="contact.html">Contact</a>
+        <p>Hackathon 2021 Winc Acadamy Kantaatje</p>
+    </footer>
+</body>
+
+</html>
